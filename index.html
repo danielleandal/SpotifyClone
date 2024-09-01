@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Your favorite music is here</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/90b710fb45.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+    <div class="main-container">
+
+        <div id="playlist-header">
+
+            <table>
+                <tr>
+                    <td>
+                        <img src="albumart/playlist.jpeg" alt="">
+                    </td>
+                    <td>
+                        <div class="playlist-header-text">
+                            <span>PLAYLIST</span>
+                            <h1 id="playlist-name">TOP Hits Philippines</h1>
+                            <p style="width:85%">PLAYLIST
+                                Listen to the Hottest hits in the Philippines today.
+                                Tag: Sikat sa Pinas, OPM Viral, OPM Trending,
+                                Tagalog, Filipino, Pilipino, Pinoy, Philippines,
+                                Pilipininas, OPM 2021, OPM 2021, Sikay, Hot OPM, Top,
+                                Viral, Trending, Charts, New OPM, Top OPM
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+    
+        </div>
+    
+        <button onclick="prev()" class="audio-buttons">
+            <i class="fa-solid fa-backward"></i>
+        </button>
+
+        <button onclick="playPause()" class="audio-buttons" style="height:110px;width:110px;margin:20px;">
+            <i id="play-button-icon" class="fa-solid fa-play"></i>
+        </button>
+
+        <button onclick="next()" class="audio-buttons">
+            <i id="play-button-icon" class="fa-solid fa-forward"></i>
+        </button>
+
+        <br><br>
+
+
+        <audio controls id="audio">
+            <source id="audioSource" src=""></source>
+            <img src="albumart/sarah.jpg" alt="">
+        </audio>
+    
+        <br><br>
+    
+        <!--------The headings of the table---------->
+        <table id="song-table">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Title</td>
+                    <td></td>
+                    <td>Album</td>
+                    <td>Date Added</td>
+                    <td>#</td>
+                </tr>
+            </thead>
+
+            <!-------The songlist which javascripts prints per code-->
+            <tbody id="song-list">
+    
+            </tbody>
+        </table>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

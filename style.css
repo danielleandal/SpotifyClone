@@ -1,0 +1,150 @@
+body {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-container {
+    padding: 20px;
+    padding-top: 20px;
+}
+
+#playlist-header {
+    height: 300px;
+    width: 100%;
+    background: rgb(58,68,180);
+    background: linear-gradient(90deg, rgba(58,68,180,1) 0%, rgba(29,174,253,1) 50%, rgba(98,69,252,1) 100%);
+    margin-bottom: 20px;
+}
+
+.playlist-header-text {
+    padding-left: 20px;
+}
+
+.playlist-header-text span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.playlist-header-text h1 {
+    margin: 0;
+    font-size: 66px;
+    font-weight: bolder;
+}
+
+.playlist-header-text p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#playlist-header img {
+    height: 290px;
+    width: auto;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table td {
+    padding: 6px;
+}
+
+#song-table {
+    color: white;
+}
+
+#song-table tr:hover {
+    background-color: green;
+}
+
+.active {
+    background-color: green;
+}
+
+.gone {
+    display: none;
+}
+
+.audio-buttons {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border-style: none;
+    background-color: green;
+    color: white;
+    font-size: large;
+}
+
+audio {
+    display: none;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    #playlist-header {
+        height: auto;
+        padding: 10px;
+    }
+
+    #playlist-header img {
+        height: 200px;
+    }
+
+    .playlist-header-text h1 {
+        font-size: 36px;
+    }
+
+    .playlist-header-text p {
+        font-size: 14px;
+    }
+
+    .audio-buttons {
+        height: 60px;
+        width: 60px;
+        font-size: medium;
+    }
+
+    table td {
+        padding: 4px;
+    }
+
+    #song-table tr:hover {
+        background-color: darkgreen;
+    }
+}
+
+@media (max-width: 480px) {
+    #playlist-header {
+        padding: 5px;
+    }
+
+    #playlist-header img {
+        height: 150px;
+    }
+
+    .playlist-header-text h1 {
+        font-size: 28px;
+    }
+
+    .playlist-header-text p {
+        font-size: 12px;
+    }
+
+    .audio-buttons {
+        height: 50px;
+        width: 50px;
+        font-size: small;
+    }
+
+    table td {
+        padding: 2px;
+    }
+
+    #song-table tr:hover {
+        background-color: darkgreen;
+    }
+}
